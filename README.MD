@@ -60,7 +60,7 @@ cd terraform-aws-3tier-alb-path-routing
 2. Place your private key:
 
 ```
-private-key/mmd-admin-key-us-east-1.pem
+private-key/terraform-key.pem
 ```
 
 3. Initialize Terraform:
@@ -90,13 +90,13 @@ Type `yes` to confirm.
 * **SSH Bastion:**
 
 ```
-ssh -i "private-key/mmd-admin-key-us-east-1.pem" ec2-user@<BASTION_PUBLIC_IP>
+ssh -i "private-key/terraform-key.pem" ec2-user@<BASTION_PUBLIC_IP>
 ```
 
 * **SSH Private EC2 (via Bastion):**
 
 ```
-ssh -i "/tmp/mmd-admin-key-us-east-1.pem" ec2-user@<PRIVATE_INSTANCE_IP>
+ssh -i "/tmp/terraform-key.pem" ec2-user@<PRIVATE_INSTANCE_IP>
 ```
 
 * **Access Applications via ALB:**
