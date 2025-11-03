@@ -1,6 +1,6 @@
 # terraform-aws-3tier-alb-path-routing
 
-![AWS 3-Tier VPC with ALB](Diagram.png)
+![AWS 3-Tier VPC with ALB](Diagram.PNG)
 
 This repository provisions a **3-tier AWS VPC** with:
 
